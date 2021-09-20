@@ -31,6 +31,8 @@ Users should be able to:
 
 ![screencapture-file-Users-kiran-Desktop-pricing-component-with-toggle-master-index-html-2021-09-20-18_23_32](https://user-images.githubusercontent.com/67024458/134047870-01cae556-511e-42c8-b789-712500d813cc.png)
 
+![screencapture-file-Users-kiran-Desktop-pricing-component-with-toggle-master-index-html-2021-09-20-18_17_41](https://user-images.githubusercontent.com/67024458/134048038-ade55ccd-00eb-4653-8432-42afe816ee0f.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
