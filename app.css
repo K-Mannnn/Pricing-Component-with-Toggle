@@ -1,0 +1,242 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body{
+    max-width: 375px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    background: url(images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position-x: 15rem;
+    background-position-y: -2rem;
+    background-color: hsl(240, 65%, 97%);
+    }
+
+h1 {
+    width: 100%;
+    margin: 3rem auto;
+    color: hsl(233, 13%, 49%);
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 4rem;
+    margin: 1.5rem auto;
+    color: hsl(232, 13%, 33%);
+}
+
+.currency {
+     font-size: 2.5rem;
+     vertical-align: .5rem;
+     margin-right: .5rem;
+ }
+
+.middle {
+    color: white;
+}
+
+h3 {
+    margin: 0 auto;
+}
+
+
+.period {
+    color: hsl(232, 13%, 33%);
+    opacity: .5;
+    
+}
+
+.panel {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    }
+
+.pricing-plan {
+    width: 90%;
+    border: 1px solid hsl(240, 78%, 98%);
+    border-radius: 10px;
+    background: white;
+    margin-top: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: hsl(233, 13%, 49%);
+    
+}
+
+#pro {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 1rem auto;
+    border-top: .25px solid hsl(234, 14%, 74%);
+    padding-top: 1rem;
+}
+
+li:last-child {
+    border-bottom: .25px solid hsl(234, 14%, 74%);padding-bottom: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(hsl(235, 38%, 74%), hsl(237, 63%, 64%));
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: .75rem;
+}
+
+#btn {
+    background: white;
+    color: hsl(235, 36%, 64%);
+}
+
+button:hover, button:focus{
+    background: white;
+    border: 1px solid hsl(235, 36%, 64%);
+    color: hsl(235, 36%, 64%);
+    outline: none;
+}
+
+#btn:hover, #btn:focus{
+    background:hsl(237, 63%, 64%);
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+
+
+
+footer{
+    margin-top: auto;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 0 1rem;
+  }
+
+ input {
+     display: none;
+ } 
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transition: .4s;
+    border-radius: 34px;
+    }
+
+  .slider::before{
+      content: '';
+      height: 15px;
+      width: 15px;
+      border-radius: 15px;
+      background-color: white;
+      position: absolute;
+      left: 3px;
+      bottom: 3px;
+      transition: .4s;
+    }
+
+  input:checked + .switch > .slider {
+    background-color: hsl(235, 36%, 64%);
+    }
+  
+  input:checked + .switch >.slider::before {
+      transform: translateX(19px);
+    }
+
+  .monthly {
+      display: none;
+  }
+  input:checked ~ .panel > .pricing-plan > .monthly  {
+      display: block;
+  }
+
+  input:checked ~ .panel > .pricing-plan > .annually {
+      display: none;
+  }
+
+  .switch:hover {
+      opacity: .5;
+  }
+
+ 
+@media (min-width: 900px) {
+    body{
+        max-width: 1440px;
+        background-color: hsl(240, 30%, 95%);
+        background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+        background-position: right top, left bottom;
+        background-repeat: no-repeat;
+   
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 5rem 2rem 5rem;
+    }
+
+    .pricing-plan {
+        width: 325px;
+        
+    }
+
+    .pricing-plan:nth-of-type(1){
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .pricing-plan:nth-of-type(2n){
+        padding: 3.5rem 2rem;
+        border: none;
+        
+    }
+    .pricing-plan:nth-of-type(3n){
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+
+}
