@@ -16,7 +16,6 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,6 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
+![screencapture-file-Users-kiran-Desktop-pricing-component-with-toggle-master-index-html-2021-09-20-18_23_32](https://user-images.githubusercontent.com/67024458/134047870-01cae556-511e-42c8-b789-712500d813cc.png)
 
 ### Links
 
